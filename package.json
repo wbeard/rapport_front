@@ -1,0 +1,16 @@
+{
+  "name": "rapport-front",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "stylus": "~0.42.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-stylus": "~0.12.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

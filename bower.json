@@ -1,0 +1,19 @@
+{
+	"name": "rapport-front-components",
+	"version": "0.0.1",
+	"authors": [
+		"William Beard <disenno@gmail.com>"
+	],
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"bootstrap": "~3.0.3",
+		"font-awesome": "~4.0.3",
+		"grunt": "~0.4.2"
+	}
+}
