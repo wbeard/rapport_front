@@ -2,15 +2,11 @@ body,
 html {
   margin: 0 auto;
   width: 100%;
-  background-color: #fff;
   color: #333;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-}
-.row {
-  margin-bottom: 15px;
 }
 .pull-content-right {
   text-align: right;
@@ -19,13 +15,10 @@ html {
   text-align: center;
 }
 .big-greeting {
-  display: block;
-  width: 100%;
   height: 100%;
   min-width: 100%;
   min-height: 100%;
   text-align: center;
-  color: whtie;
   position: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -33,27 +26,43 @@ html {
   background: #ddd url("../../img/sprinkles.png");
 }
 .big-greeting .heading {
-  width: 100%;
   font-size: 80px;
-  position: relative;
   margin: 10% auto 0 auto;
-  z-index: 999;
+}
+.big-greeting .heading h1 {
+  width: 100%;
+}
+.big-greeting .heading h4 {
+  width: 100%;
+}
+@media screen and (max-width: 675px) {
+  .big-greeting .heading {
+    font-size: 40px;
+  }
 }
 .footing {
-  width: 100%;
   font-size: 80px;
+}
+#navigation {
+  margin-bottom: 0;
 }
 #application-container {
   position: absolute;
-  background-color: #fff;
+  height: 100%;
   top: 100%;
   width: 100%;
-  border-top: 2px solid #222;
-  border-top: 2px solid rgba(0,0,0,0.3);
+}
+#application-container .container {
+  height: 100%;
+  position: relative;
 }
 #application-container .container > .row {
-  margin-top: 50px;
-  margin-botttom: 50px;
+  height: 100%;
+  background-color: #fff;
+  padding-top: 65px;
+}
+#application-container .container > .row .row {
+  margin-bottom: 15px;
 }
 #application-container .container > .row .secondary-heading {
   margin-bottom: 30px;

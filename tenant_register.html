@@ -7,7 +7,7 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
 		<link href="styles/compiled/index.css" rel="stylesheet" />
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#navigation" data-offset="75">
 		<header class="big-greeting">
 			<div class="heading">
 				<span class="fa-stack fa-lg">
@@ -17,25 +17,50 @@
 				<h1 class="center-content"><a href="#" class="btn-link">4200 Wallaby Way</a> is almost yours!</h1>
 				<h3 class="center-content">Do you already have a Rapport account or are you new?</h3>
 				<button id="applyWithAccount" class="btn btn-primary btn-lg">Sign In with Rapport</button>
-				<button id="getStarted" class="btn btn-danger btn-lg">I'm new</button>
+				<button data-scroll-target="#social" class="btn btn-danger btn-lg">Sign Up</button>
 			</div>
 		</header>
 		<div id="application-container">
+			<nav id="navigation" class="navbar navbar-default navbar-inverse" role="navigation">
+			  <!-- Brand and toggle get grouped for better mobile display -->
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="#">4200 Wallaby Way</a>
+			  </div>
+
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a data-scroll-target="#social" href="#social">Sign In</a></li>
+			      <li><a data-scroll-target="#basicInfo" href="#basicInfo">Basic Info</a></li>
+			      <li><a data-scroll-target="#credit" href="#credit">Credit History</a></li>
+			      <li><a data-scroll-target="#work" href="#work">Work History</a></li>
+			      <li><a data-scroll-target="#landlords" href="#landlords">Previous Landlords</a></li>
+			      <li><a data-scroll-target="#details" href="#details">Legal Stuff</a></li>
+			      <li><a data-scroll-target="#finalize" href="#finalize">Finalize</a></li>
+			  </div><!-- /.navbar-collapse -->
+			</nav>
 			<div class="container">
-				<div class="row active">
+				<div id="social" class="row active">
 					<h1 class="center-content text-primary">Sign Up</h1>
-					<h4 class="center-content">Do you already have an account on one of these? Click the logo to sign up with it.</h4>
+					<h4 class="center-content">Do you already have an account on one of these?</h4>
+					<h4 class="center-content">Click the logo to sign up with it.</h4>
 					<div class="connect-icons center-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<i class="fa fa-linkedin-square fa-3x"></i>
-						<i class="fa fa-facebook-square fa-3x"></i>
-						<i class="fa fa-twitter-square fa-3x"></i>
-						<i class="fa fa-google-plus-square fa-3x"></i>
+						<i class="fa fa-linkedin-square fa-5x"></i>
+						<i class="fa fa-facebook-square fa-5x"></i>
+						<i class="fa fa-twitter-square fa-5x"></i>
+						<i class="fa fa-google-plus-square fa-5x"></i>
 					</div>
 					<div class="center-content">
-						<button class="btn btn-link">Skip this step</button>
+						<button data-scroll-target="#basicInfo" class="btn btn-link">Skip this step</button>
 					</div>
 				</div>
-				<div class="row">
+				<div id="basicInfo" class="row">
 					<h1 class="center-content text-primary">We need some basic information first</h1>
 					<h4 class="center-content secondary-heading">Give us some of your details so we can know more about you.</h4>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -43,34 +68,30 @@
 							<img class="profile-pic" src="https://s3.amazonaws.com/uifaces/faces/twitter/idiot/128.jpg" alt="Your picture" />
 						</figure>
 					</div>
-					<div class="form-horizontal col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<div class="form-group">
-							<label for="inputName" class="hidden-xs control-label col-sm-1"><i class="fa fa-2x fa-user"></i></label>
-							<div class="col-xs-8 col-sm-10 col-md-10 col-lg-8">
-								<input class="form-control" id="inputName" placeholder="Name, ex. Jim Halpert" />
-							</div>
+							<label for="inputName" class="hidden-xs"><h4><strong>Name</strong></h4></label>
+							<input class="form-control input-lg" id="inputName" placeholder="Name, ex. Jim Halpert" />
 						</div>
 						<div class="form-group">
-							<label for="inputEmail" class="hidden-xs control-label col-sm-1"><i class="fa fa-2x fa-envelope"></i></label>
-							<div class="col-xs-8 col-sm-10 col-md-10 col-lg-8">
-								<input class="form-control" id="inputEmail" placeholder="Email, ex. ti@collegepark.com" />
-							</div>
+							<label for="inputEmail" class="hidden-xs"><h4><strong>Email</strong></h4></label>
+							<input class="form-control input-lg" id="inputEmail" placeholder="Email, ex. ti@collegepark.com" />
 						</div>
 						<div class="form-group">
-							<label for="inputPhone" class="hidden-xs control-label col-sm-1"><i class="fa fa-2x fa-phone"></i></label>
-							<div class="col-xs-8 col-sm-10 col-md-10 col-lg-8">
-								<input class="form-control" id="inputPhone" placeholder="Phone, ex. (555) 867-5309" />
-							</div>
+							<label for="inputPhone" class="hidden-xs control-label"><h4><strong>Phone</strong></h4></label>
+							<input class="form-control input-lg" id="inputPhone" placeholder="Phone, ex. (555) 867-5309" />
 						</div>
 						<div class="form-group">
-							<label for="inputLocation" class="hidden-xs control-label col-sm-1"><i class="fa fa-2x fa-map-marker"></i></label>
-							<div class="col-xs-8 col-sm-10 col-md-10 col-lg-8">
-								<input class="form-control" id="inputLocation" placeholder="Location, ex. Pensacola, FL" />
-							</div>
+							<label for="inputLocation" class="hidden-xs control-label"><h4><strong>Location</strong></h4></label>
+							<input class="form-control input-lg" id="inputLocation" placeholder="Location, ex. Pensacola, FL" />
+						</div>
+						<div class="pull-content-right">
+							<button data-scroll-target="#social" class="btn btn-lg btn-default">Back</button>
+							<button data-scroll-target="#credit" class="btn btn-lg btn-primary">Next</button>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div id="credit" class="row">
 					<h1 class="center-content text-primary">
 						How's your credit?
 					</h1>
@@ -83,7 +104,7 @@
 						<a href="#" class="text-danger">Verify</a> your credit to rank higher than unverified applicants.
 					</h4>
 				</div>
-				<div class="row">
+				<div id="work" class="row">
 					<h1 class="center-content text-primary">
 						Tell us about your <strong>job history</strong>
 					</h1>
@@ -135,7 +156,7 @@
 					</div>
 					<button class="center-block btn btn-primary"><i class="fa fa-fw fa-plus"></i>Add another</button>
 				</div>
-				<div class="row">
+				<div id="landlords" class="row">
 					<h1 class="center-content text-primary">
 						Tell us about your <strong>previous landlords</strong>
 					</h1>
@@ -172,13 +193,13 @@
 					</div>
 					<button class="center-block btn btn-primary"><i class="fa fa-fw fa-plus"></i>Add another</button>
 				</div>
-				<div class="row">
+				<div id="details" class="row">
 					<h1 class="center-content text-primary">
 						Let's wrap things up
 					</h1>
 					<h4 class="center-content secondary-heading">We just need a few last details before we're finished.</h4>
 				</div>
-				<div class="row footing center-content">
+				<div id="finalize" class="row footing center-content">
 					<span class="fa-stack fa-lg">
 						<i class="fa fa-circle fa-stack-2x text-primary"></i>
 						<i class="fa fa-flag-checkered fa-inverse fa-stack-1x"></i>
@@ -191,9 +212,10 @@
 		<script src="./bower_components/jquery/jquery.min.js"></script>
 		<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script>
-			$("#getStarted").on("click", function(e) {
+			$("[data-scroll-target]").on("click", function(e) {
+				var target = $(this).attr("data-scroll-target");
 				$("html, body").animate({
-					scrollTop: $("#application-container").offset().top
+					scrollTop: $(target).offset().top
 				}, 500);
 			});
 
@@ -223,9 +245,18 @@
 			});
 
 			$(window).on("scroll", function(e) {
-				console.log($("body").scrollTop());
-				if($("body").scrollTop() > 300) {
+				if($(window).scrollTop() > 300) {
 					$(".connect-icons > .fa").each(function(i, elem) { setTimeout(function() { $(elem).addClass("grow")}, 200 + i * 100) })
+				}
+
+				if($(window).scrollTop() >= $("#application-container").offset().top) {
+					console.log($(window).scrollTop() >= $("#application-container").offset().top)
+					if (!$("#navigation").hasClass("navbar-fixed-top")) {
+						$("#navigation").addClass("navbar-fixed-top")
+					}
+				} else {
+
+					$("#navigation").removeClass("navbar-fixed-top");
 				}
 			})
 		</script>
