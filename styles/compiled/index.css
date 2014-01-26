@@ -52,19 +52,19 @@ html {
   top: 100%;
   width: 100%;
 }
-#application-container .container {
+#application-container > div {
   height: 100%;
   position: relative;
 }
-#application-container .container > .row {
+#application-container > div > .row {
   height: 100%;
   background-color: #fff;
   padding-top: 75px;
 }
-#application-container .container > .row .row {
+#application-container > div > .row .row {
   margin-bottom: 15px;
 }
-#application-container .container > .row .secondary-heading {
+#application-container > div > .row .secondary-heading {
   margin-bottom: 30px;
 }
 .connect-icons > .fa {
