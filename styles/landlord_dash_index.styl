@@ -8,6 +8,15 @@ body
 	&.fixed-nav
 		padding-top 45px
 
+.pull-content-right
+	text-align right
+
+.center-content
+	text-align center
+
+.editable
+	border-bottom 1px dotted black
+
 #mainWrapper, #homeCollectionWrapper, #homeDetailWrapper, #homeDetailOverView, #homeApplicantWrapper, #homeApplicantCollection, #homeApplicantDetail
 	height 100%
 
@@ -40,8 +49,8 @@ body
 
 .homeDetailOverView
 	position relative
-	padding-top 10px
-	padding-left 20px
+	padding 10px 20px
+	overflow-y visible
 
 .applicants-button
 	position absolute
@@ -66,6 +75,14 @@ body
 		background-color #008CBA
 		& .fa
 			color white
+
+.homeDetailOverView
+	& .row
+		padding 15px 0
+		& .form-group
+			padding-left 15px
+			padding-right 15px
+
 
 .toggle-label
 	line-height 35px
@@ -103,3 +120,15 @@ body
 			width 100%
 			outline none
 
+#coverPicImg
+	padding 3px
+	border 1px dotted #ccc
+
+.listing-stats
+	padding-top 35px
+
+.applicant-number
+	vertical-align bottom
+
+.homeApplicantDetailWrapper
+	padding-top 20px

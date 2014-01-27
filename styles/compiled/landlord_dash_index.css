@@ -7,6 +7,15 @@ body {
 body.fixed-nav {
   padding-top: 45px;
 }
+.pull-content-right {
+  text-align: right;
+}
+.center-content {
+  text-align: center;
+}
+.editable {
+  border-bottom: 1px dotted #000;
+}
 #mainWrapper,
 #homeCollectionWrapper,
 #homeDetailWrapper,
@@ -44,8 +53,8 @@ body.fixed-nav {
 }
 .homeDetailOverView {
   position: relative;
-  padding-top: 10px;
-  padding-left: 20px;
+  padding: 10px 20px;
+  overflow-y: visible;
 }
 .applicants-button {
   position: absolute;
@@ -70,6 +79,13 @@ body.fixed-nav {
 }
 .list-group-item.active .fa {
   color: #fff;
+}
+.homeDetailOverView .row {
+  padding: 15px 0;
+}
+.homeDetailOverView .row .form-group {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .toggle-label {
   line-height: 35px;
@@ -122,4 +138,17 @@ body.fixed-nav {
   height: 100%;
   width: 100%;
   outline: none;
+}
+#coverPicImg {
+  padding: 3px;
+  border: 1px dotted #ccc;
+}
+.listing-stats {
+  padding-top: 35px;
+}
+.applicant-number {
+  vertical-align: bottom;
+}
+.homeApplicantDetailWrapper {
+  padding-top: 20px;
 }

@@ -134,7 +134,36 @@
 									<button class="btn btn-sm btn-default"></button> 
 								</div>
 							</div>
-							<p class="toggle-label">Listing Status</p>
+							<p class="toggle-label">Accept Applications</p>
+						</div>
+						<div class="pull-content-right col-lg-8 col-md-8">
+							<label class="toggle-label">URL</label><a class="toggle-label" href="#">http://www.getrapport.io/42-Wallaby-Way-Pensacola-FL-32503</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<h1 class="editable">42 Wallaby Way</h1>
+							<h4 class="editable">Pensacola, FL 32503</h4>
+							<h4 class="editable">$995.00 per month</h4>
+						</div>
+						<div class="listing-stats pull-content-right col-lg-6 col-md-6">
+							<h4 class="applicant-number"><span class="text-success">3</span> Applicants</h4>
+							<h4 class="applicant-number"><span class="text-success">12</span> Views</h4>
+							<h4 class="applicant-number">Best Referrer: http://trulia.com</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-lg-4 pull-content-right col-md-4">
+									<h2>Cover Picture</h2>
+									<p>Upload a beautiful picture of this property. It's proudly displayed on the application.</p>
+									<a href="#" class="btn btn-link">Browse</a>
+								</label>
+								<div id="coverPicImg" class="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 center-content">
+									<img src="http://placehold.it/350x150" />
+								</div>
+							</div>
 						</div>
 					</div>
 					<button data-scroll-target="#homeDetailWrapper" class="btn btn-md btn-danger center-block applicants-button">Applicants <i class="fa fa-fw fa-chevron-down"></i></button>
@@ -148,7 +177,7 @@
 						<div id="homeApplicantList" class="list-group homeApplicantCollection--list">
 							<div id="homeApplicantListEmptyState">
 							</div>
-							<div class="list-group-item">
+							<div class="list-group-item active">
 								<div class="media">
 									<a class="pull-left" href="#">
 										<i class="fa fa-fw fa-user fa-3x"></i>
@@ -261,6 +290,24 @@
 						</div>
 					</div>
 					<div id="homeApplicantDetail" class="col-lg-8 col-sm-8 col-md-8">
+						<div class="center-block center-content homeApplicantDetailWrapper" id="homeApplicantDetailWrapper">
+							<div id="homeApplicantAvatar" class="homeApplicantAvatar center-content">
+								<i class="fa fa-user fa-2x text-primary"></i>
+							</div>
+							<div id="homeApplicantInfo" class="homeApplicantInfo">
+								<h1>J. James</h1><span class="badge gold-badge">Gold</span>
+								<h4>jjames@email.com</h4>
+								<h4>(850) 555-5555</h4>
+								<h4>Pensacola, FL</h4>
+								<h4>$3,000 <i class="fa fa-fw fa-check text-primary"></i></h4>
+								<br />
+								<h4><span class="text-success">Great</span> Credit <i class="fa fa-fw fa-check text-primary"></i></h4>
+								<h4><span class="text-success">3y 5m</span> Per Job <i class="fa fa-fw fa-check text-primary"></i></h4>
+								<h4><span class="text-success">Excellent</span> Landlord Referrals <i class="fa fa-fw fa-check text-primary"></i></h4>
+								<h4><span class="text-success">0</span> Criminal Infractions <i class="fa fa-fw fa-check text-primary"></i></h4>
+							</div>
+						</div>
+						<button class="btn-lg btn btn-success center-block">Rent</button>
 					</div>
 				</div>
 			</div>
