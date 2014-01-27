@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="http://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet" />
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="./styles/compiled/landlord_dash_index.css" rel="stylesheet" />
+	</head>
+	<body class="fixed-nav">
+		<nav role="navigation" class="navbar-fixed-top navgar navbar-default navbar-inverse">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navigationMenu">
+					<i class="fa fa-fw fa-bars fa-inverse"></i>
+				</button>
+				<a class="navbar-brand" href="#">Rapport</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navigationMenu">
+				<ul class="nav navbar-nav">
+					<li><a href="#" class="btn btn-success"><i class="fa fa-fw fa-home"></i> Add a Home</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><i class="fa fa-fw fa-gears"></i></a></li>
+				</ul>
+			<div>
+		</nav>
+		<div id="mainWrapper" class="row">
+			<div id="homeCollectionWrapper" class="col-lg-4 homeCollectionWrapper">
+				<div id="homeCollectionSearch" class="input-group homeCollectionWrapper--search">
+					<input type="text" class="form-control" placeholder="Address, ex. 42 Wallaby Way" />
+					<span class="input-group-addon"><i class="fa fa-search fa-fw"></i></span>
+				</div>
+				<div id="homeCollectionList" class="list-group homeCollectionWrapper--list">
+					<div id="homeCollectionListEmptyState">
+					</div>
+					<div class="list-group-item active">
+						<div class="media">
+							<a class="pull-left" href="#">
+								<i class="fa fa-fw fa-home fa-3x"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">42 Wallaby Way, Pensacola, FL</h4>
+								<p>1 applicant</p>
+							</div>
+						</div>
+					</div>
+					<div class="list-group-item">
+						<div class="media">
+							<a class="pull-left" href="#">
+								<i class="fa fa-fw fa-home fa-3x"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">42 Wallaby Way, Pensacola, FL</h4>
+								<p>1 applicant</p>
+							</div>
+						</div>
+					</div>
+					<div class="list-group-item">
+						<div class="media">
+							<a class="pull-left" href="#">
+								<i class="fa fa-fw fa-home fa-3x"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">42 Wallaby Way, Pensacola, FL</h4>
+								<p>1 applicant</p>
+							</div>
+						</div>
+					</div>
+					<div class="list-group-item">
+						<div class="media">
+							<a class="pull-left" href="#">
+								<i class="fa fa-fw fa-home fa-3x"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">42 Wallaby Way, Pensacola, FL</h4>
+								<p>1 applicant</p>
+							</div>
+						</div>
+					</div>
+					<div class="list-group-item">
+						<div class="media">
+							<a class="pull-left" href="#">
+								<i class="fa fa-fw fa-home fa-3x"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">42 Wallaby Way, Pensacola, FL</h4>
+								<p>1 applicant</p>
+							</div>
+						</div>
+					</div>
+					<div class="list-group-item">
+						<div class="media">
+							<a class="pull-left" href="#">
+								<i class="fa fa-fw fa-home fa-3x"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">42 Wallaby Way, Pensacola, FL</h4>
+								<p>1 applicant</p>
+							</div>
+						</div>
+					</div>
+					<div class="list-group-item">
+						<div class="media">
+							<a class="pull-left" href="#">
+								<i class="fa fa-fw fa-home fa-3x"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">42 Wallaby Way, Pensacola, FL</h4>
+								<p>1 applicant</p>
+							</div>
+						</div>
+					</div>
+					<div class="list-group-item">
+						<div class="media">
+							<a class="pull-left" href="#">
+								<i class="fa fa-fw fa-home fa-3x"></i>
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">42 Wallaby Way, Pensacola, FL</h4>
+								<p>1 applicant</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="homeDetailWrapper" class="col-lg-8 homeDetailWrapper">
+				<div id="homeDetailWrapperEmptyState">
+				</div>
+				<div id="homeDetailOverView" class="homeDetailOverView">
+					<div class="row">
+						<div class="col-lg-4">
+							<div id="toggle" class="toggle toggle-on">
+								<div class="toggle-switch">
+									<button class="btn btn-sm btn-default"></button> 
+								</div>
+							</div>
+							<p class="toggle-label">Listing Status</p>
+						</div>
+						<div class="col-lg-2">
+							
+						</div>
+					</div>
+					<button data-scroll-target="#homeDetailWrapper" class="btn btn-md btn-danger center-block applicants-button">Applicants <i class="fa fa-fw fa-chevron-down"></i></button>
+				</div>
+				<div id="homeApplicantWrapper" class="row homeApplicantWrapper">
+					<div id="homeApplicantCollection" class="col-lg-4 homeApplicantCollection">
+						<div id="homeApplicantCollectionSearch" class="input-group homeApplicantCollection--search">
+							<input type="text" class="form-control" placeholder="Name" />
+							<span class="input-group-addon"><i class="fa fa-search fa-fw"></i></span>
+						</div>
+						<div id="homeApplicantList" class="list-group homeApplicantCollection--list">
+							<div id="homeApplicantListEmptyState">
+							</div>
+							<div class="list-group-item">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<i class="fa fa-fw fa-user fa-3x"></i>
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">J. James</h4><span class="pull-right badge gold-badge">Gold</span>
+										<p>Pensacola, FL</p>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<i class="fa fa-fw fa-user fa-3x"></i>
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">J. James</h4><span class="pull-right badge silver-badge">Silver</span>
+										<p>Pensacola, FL</p>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<i class="fa fa-fw fa-user fa-3x"></i>
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">J. James</h4><span class="pull-right badge bronze-badge">Bronze</span>
+										<p>Pensacola, FL</p>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<i class="fa fa-fw fa-user fa-3x"></i>
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">J. James</h4>
+										<p>Pensacola, FL</p>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<i class="fa fa-fw fa-user fa-3x"></i>
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">J. James</h4>
+										<p>Pensacola, FL</p>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<i class="fa fa-fw fa-user fa-3x"></i>
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">J. James</h4>
+										<p>Pensacola, FL</p>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<i class="fa fa-fw fa-user fa-3x"></i>
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">J. James</h4>
+										<p>Pensacola, FL</p>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<i class="fa fa-fw fa-user fa-3x"></i>
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">J. James</h4>
+										<p>Pensacola, FL</p>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<i class="fa fa-fw fa-user fa-3x"></i>
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">J. James</h4>
+										<p>Pensacola, FL</p>
+									</div>
+								</div>
+							</div>
+							<div class="list-group-item">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<i class="fa fa-fw fa-user fa-3x"></i>
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">J. James</h4>
+										<p>Pensacola, FL</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="homeApplicantDetail" class="col-lg-8">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./bower_components/jquery/jquery.min.js"></script>
+		<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script>
+			$("[data-scroll-target]").on("click", function(e) {
+				var target = $(this).attr("data-scroll-target");
+				$(target).animate({
+					scrollTop: window.innerHeight
+				}, 200);
+			});
+			$(".toggle").on("click", function(e) {
+				$(this).toggleClass("toggle-on");
+				$(this).toggleClass("toggle-off")
+			})
+		</script>
+	</body>
+</html>

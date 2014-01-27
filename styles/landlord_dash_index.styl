@@ -1,0 +1,105 @@
+@import "nib";
+
+html 
+	height 100%
+
+body
+	height 100%
+	&.fixed-nav
+		padding-top 45px
+
+#mainWrapper, #homeCollectionWrapper, #homeDetailWrapper, #homeDetailOverView, #homeApplicantWrapper, #homeApplicantCollection, #homeApplicantDetail
+	height 100%
+
+.fixedMenuArea
+	height 100%
+	overflow-y scroll
+
+.homeCollectionWrapper
+	@extends .fixedMenuArea
+	border-right 1px solid #ccc
+	padding-right 0
+
+.homeDetailWrapper
+	@extends .fixedMenuArea
+	padding-left 0
+
+.homeCollectionWrapper--search, .homeCollectionWrapper--list .list-group-item, .homeApplicantCollection--list .list-group-item
+	margin 3px
+
+.homeApplicantWrapper
+	@extends .fixedMenuArea
+	overflow-y visible
+	border-top 1px solid #ccc
+
+.homeApplicantCollection
+	@extends .homeCollectionWrapper
+
+.homeApplicantCollection--search
+	@extends .homeCollectionWrapper--search
+
+.homeDetailOverView
+	position relative
+	padding-top 10px
+	padding-left 20px
+
+.applicants-button
+	position absolute
+	bottom 0
+	left 20px
+
+.gold-badge
+	background #ffd700
+	color darken(#ffd700, 70%)
+
+.silver-badge
+	background #ccc
+	color darken(#ccc, 70%)
+
+.bronze-badge
+	background darken(#ffd700, 40%)
+	color lighten(darken(#ffd700, 40%), 70%)
+
+.list-group-item
+	&.active
+		color #efefef
+		background-color #008CBA
+		& .fa
+			color white
+
+.toggle-label
+	line-height 35px
+	vertical-align top
+	display inline-block
+	margin-right 5px
+	margin-left 5px
+
+.toggle
+	position relative
+	width 100px
+	height 35px
+	transition(background-color, 0.1s, ease-out-in)
+	display inline-block
+	&.toggle-on
+		background-color #43AC6A
+		& .toggle-switch
+			left 0
+			& .btn:before
+				content 'On'
+	&.toggle-off
+		background-color #F04124
+		& .toggle-switch
+			left 50%
+			& .btn:before
+				content 'Off'
+	& .toggle-switch
+		position absolute
+		top 0
+		transition(all, 0.1s, ease-in-out)
+		height 100%
+		width 50%
+		& .btn
+			height 100%
+			width 100%
+			outline none
+
