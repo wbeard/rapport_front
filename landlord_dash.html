@@ -290,6 +290,7 @@
 						</div>
 					</div>
 					<div id="homeApplicantDetail" class="col-lg-8 col-sm-8 col-md-8">
+						<button class="btn btn-md btn-danger center-block overview-button">Overview <i class="fa fa-fw fa-chevron-up"></i></button>
 						<div class="center-block center-content homeApplicantDetailWrapper" id="homeApplicantDetailWrapper">
 							<div id="homeApplicantAvatar" class="homeApplicantAvatar center-content">
 								<i class="fa fa-user fa-2x text-primary"></i>
@@ -320,6 +321,11 @@
 				$(target).animate({
 					scrollTop: window.innerHeight
 				}, 200);
+			});
+			$(".overview-button").on("click", function(e) {
+				$("#homeDetailWrapper").animate({
+					scrollTop: 0
+				}, 200)
 			});
 			$(".toggle").on("click", function(e) {
 				$(this).toggleClass("toggle-on");
